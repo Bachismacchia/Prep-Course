@@ -1,0 +1,19 @@
+h1{
+    color:limegreen;
+}
+img{
+    width: 400px;
+}
+#thirdDiv{
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    border: 50px;
+    border-color: lightseagreen;
+    border-style: groove;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+
+}
