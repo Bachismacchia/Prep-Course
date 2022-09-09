@@ -7,6 +7,7 @@ img{
 #thirdDiv{
     height: 600px;
     width: 500px;
+    background-color: lightslategray;
     padding: 50px;
     border: 50px;
     border-color: lightseagreen;
