@@ -1,0 +1,21 @@
+Variables: Una variable es un recipiente (*) que va a guardar algo y este algo puede cambiar o, valga 
+la redundancia, algo, que generalmente es un valor, que puede variar. Estos contenedores en JS pueden alojar
+cualquier tipo de datos como ser: numericos, booleanos, Strings e incluso estructuras de datos como ser 
+arreglos, matrices y objetos.
+* Ese recipiente, en programación, es un espacio de memoria reservado para ese algo o ese valor variable. 
+
+Strings: un String, que significa "cadena" en español, representa una lista de caracteres, los cuales serían 
+sus eslabones. Este tipo de datos es un texto que puede ser descriptivo o utilizado para busquedas y 
+comparaciones en programación.
+
+Funciones (argumentos, return) : Las Funciones son fracciones de código que se usan frecuentemente y que por 
+lo general devuelven un valor. 
+    argumentos: con frecuencia las funciones reciven argumentos que son valores que necesita o puede necesitar
+    para poder devolver el valor esperado.
+
+Declaraciones if: estas declaraciones tienen condicionantes y de acuerdo a los mismos pueden o no hacer ciertos
+procesos.
+
+Valores booleanos (true, false): este es un tipo de datos que contiene solo 2 valores "true" (verdadero) o 
+"false" (falso); este puede ser guardado en una variable, retornado, mostrado etc. ; y puede ser obtenido de
+una condición que de ser verdadera dará true y de ser falsa false.

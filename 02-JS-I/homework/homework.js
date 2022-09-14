@@ -60,11 +60,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x === y){
-    return true;
-  } else {
-    return false;
-  }
+  return x === y;
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -78,11 +74,7 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num < 90) {
-    return true;
-  } else {
-    return false;
-  }
+  return num < 90;
 }
 
 function mayorQueCincuenta(num) {
@@ -109,7 +101,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  return num % 2 === 1;
+  return num % 2 === 1; 
 }
 
 function elevarAlCuadrado(num) {
@@ -140,7 +132,6 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  //return num - (num % 1) + 1;
   return Math.ceil(num)
 }
 
@@ -159,13 +150,15 @@ function esPositivo(numero) {
   if (numero > 0) {
     return "Es positivo";
   } 
-   else if (numero < 0) {
+  else if (numero < 0) {
     return "Es negativo";
   }
-   else (numero === 0) 
+  else {
     return false;
+  } 
+    
   
-  
+  //se puede usar Math.sign para evitar errores de tipos de parametros o i
 }
 
 function agregarSimboloExclamacion(str) {
