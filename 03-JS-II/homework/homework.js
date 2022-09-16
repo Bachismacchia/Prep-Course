@@ -52,9 +52,9 @@ function saludo(idioma) {
     return "Ni Hao!";
   } else if (idioma === "ingles") {
     return "Hello!";
-  } 
+  } else {
     return "Hola!";
-  
+  }
 }
 
 function colors(color) {

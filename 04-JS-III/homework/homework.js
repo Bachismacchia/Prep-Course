@@ -37,7 +37,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array.push(elemento);
+  array.push(elemento);                    // la solución resuelve array[array.length] = elemento;
   return array;
 }
 
@@ -45,7 +45,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
-  // Pista: usa el método `.unshift`
+  // Pista: usa el método `.unshift`       
   // Tu código:
   array.unshift(elemento);
   return array;
@@ -95,13 +95,15 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var promedio = 0;
-  var suma = 0;
-  for (var i = 0; i < resultadosTest.length; i++){  // solucion propuesta  
-    suma = suma + resultadosTest[i];                // return agregarNumeros(resultadosTest) / resultadosTest.length;
-  }                                                 // utiliza la función creada para sumar los elementos.
-  promedio = suma / resultadosTest.length;
-  return promedio;
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
+  
+  //var promedio = 0;
+  //var suma = 0;
+  //for (var i = 0; i < resultadosTest.length; i++){   
+  //suma = suma + resultadosTest[i];                
+  //}                                                
+  //promedio = suma / resultadosTest.length;
+  //return promedio;
 }
 
 
@@ -167,10 +169,9 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
-  let num = n.toString()
+let num = n.toString()
   if(num.charAt(0) === "9"){
-    return true
+   return true
   }
   return false
 }
@@ -179,16 +180,13 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí 
-  var compara = false; 
-  var iguales = arreglo[0];
-  for (var i = 1; i < arreglo.length; i++){  //for (var i =0 ; i < arreglo.length - 1; i++) {
-     if (iguales === arreglo[i]){            //if(arreglo[i] !== arreglo[i+1]){ 
-      compara = true;                        // return false
-     } else {
-      compara = false;
-     }
-  }
-  return compara;
+  
+  for (var i = 1; i < arreglo.length; i++){  
+    if (arreglo[0] === arreglo[i]){            // para que todos sean iguales todos tienen que ser igual al primer elemento.
+      return true;                        
+    }
+  }  
+  return false;
 } 
 
 
@@ -249,7 +247,7 @@ function breakStatement(numero) {
 
   for (var i=0; i<10; i++){
     acu = acu + 2;
-    if (acu === 0) break;
+    if (acu === i) break;
     else {
      array.push(acu);
     }
